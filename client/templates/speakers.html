@@ -1,0 +1,12 @@
+<template name="speakers">
+	<h1>Speakers</h1>
+
+	{{> quickForm collection="Speakers" id="insertSpeakerForm" type="insert"}}
+
+	
+	<ul>
+		{{#each speakers}}
+			<li>{{name}}</li>
+		{{/each}}
+	</ul>
+</template>
